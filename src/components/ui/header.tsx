@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Sun from "../icon/sun";
+import ThemeToggler from "./theme-toggler";
 
 const linkItems = [
   { id: 1, link: "#home", text: "Home" },
@@ -42,9 +42,7 @@ const Header = () => {
           ))}
         </ul>
       </nav>
-      <button className="cursor-pointer">
-        <Sun />
-      </button>
+      <ThemeToggler />
     </header>
   );
 };
