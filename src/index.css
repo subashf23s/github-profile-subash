@@ -1,15 +1,19 @@
 @import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
 :root {
-  --background: oklch(0.95 0 0);
+  --background: oklch(0.985 0 0);
   --foreground: oklch(0.145 0 0);
+  --light-gray: oklch(55.754% 0.01655 244.997);
 }
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
+  --light-gray: oklch(67.64% 0.01748 254.033);
 }
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-light-gray: var(--light-gray);
 }
 @layer components {
   .container {
@@ -28,9 +32,12 @@
     @apply bg-background text-foreground;
   }
   h1 {
-    @apply text-4xl font-bold text-gray-800;
+    @apply text-4xl font-bold  text-foreground;
   }
   h3 {
-    @apply text-2xl font-medium text-gray-700;
+    @apply text-2xl font-medium  text-foreground;
+  }
+  a {
+    @apply text-light-gray;
   }
 }

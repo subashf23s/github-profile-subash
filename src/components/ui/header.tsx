@@ -5,8 +5,8 @@ const linkItems = [
   { id: 1, link: "#home", text: "Home" },
   { id: 2, link: "#about-me", text: "About me" },
   { id: 3, link: "#services", text: "Services" },
-  { id: 4, link: "", text: "My Work" },
-  { id: 5, link: "", text: "Contact me" },
+  { id: 4, link: "#my-work", text: "My Work" },
+  { id: 5, link: "#contact-me", text: "Contact me" },
 ];
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -33,10 +33,7 @@ const Header = () => {
       <nav className="bg-white/50 shadow-sm px-12 py-3 rounded-full">
         <ul className="flex items-center gap-4">
           {linkItems.map((e) => (
-            <li
-              key={e.id}
-              className="font-semibold cursor-pointer text-gray-500 hover:text-gray-700"
-            >
+            <li key={e.id} className="font-semibold cursor-pointer ">
               <a href={e.link}>{e.text}</a>
             </li>
           ))}
