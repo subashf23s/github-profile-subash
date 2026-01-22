@@ -1,7 +1,7 @@
 import subashphoto from "../../../public/subashphoto.jpg";
-const Hero = () => {
+const Home = () => {
   return (
-    <section className="container grid place-items-center">
+    <section className="container grid place-items-center" id="home">
       <img
         src={subashphoto}
         className="size-32 rounded-full object-top object-cover"
@@ -11,4 +11,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Home;

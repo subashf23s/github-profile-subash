@@ -1,11 +1,15 @@
+import AboutMe from "./components/section/about-me";
+import Home from "./components/section/home";
+import Services from "./components/section/services";
 import Header from "./components/ui/header";
-import Hero from "./components/ui/hero";
 
 function App() {
   return (
     <main>
       <Header />
-      <Hero />
+      <Home />
+      <AboutMe />
+      <Services />
     </main>
   );
 }
