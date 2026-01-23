@@ -1,11 +1,16 @@
 import subashphoto from "../../../public/subashphoto.jpg";
 import handshake from "../../../public/hand-shake.png";
+import Download from "../icon/download";
+import MoveRight from "../icon/move-right";
 const Home = () => {
   return (
-    <section className="container grid place-items-center min-h-dvh" id="home">
+    <section
+      className="container grid place-items-center min-h-dvh pt-10"
+      id="home"
+    >
       <img
         src={subashphoto}
-        className="size-32 rounded-full object-top object-cover"
+        className="size-32 rounded-full object-top object-cover "
       />
       <h3 className="py-2 flex items-center gap-2">
         Hi! I'm Subash Thatheuse <img src={handshake} className="size-6" />
@@ -19,9 +24,23 @@ const Home = () => {
         experience in multiple companies like Obo Technology, Gadgeon Smart
         Systems and Litmus7.
       </p>
-      <div className="space-x-8">
-        <a href="#contact-me">contact me</a>
-        <button>my resume</button>
+      <div className="flex gap-4">
+        <a
+          href="#contact-me"
+          className="flex gap-2 items-center  px-10 py-2.5 rounded-full bg-linear-to-r from-[#b820e6] to-[#da7d20] text-white font-semibold"
+        >
+          contact me
+          <MoveRight />
+        </a>
+        <a
+          href="/Subash_fullstack.pdf"
+          className="flex gap-2 items-center border px-10 py-2.5 text-foreground  rounded-full font-semibold"
+          type="file/pdf"
+          download={"Subash_Fullstack.pdf"}
+        >
+          my resume
+          <Download />
+        </a>
       </div>
     </section>
   );
