@@ -7,12 +7,12 @@ const Home = () => {
       id="home"
     >
       <img
-        src="/subashphoto.jpg"
+        src="./subashphoto.jpg"
         className="size-32 rounded-full object-top object-cover "
       />
       <h3 className="py-4 flex items-center gap-2">
         Hi! I'm Subash Thatheuse{" "}
-        <img src="/hand-shake.png" className="size-6" />
+        <img src="./hand-shake.png" className="size-6" />
       </h3>
       <h2 className="text-6xl text-center py-4 tracking-wide leading-16">
         fullstack software developer
@@ -32,7 +32,7 @@ const Home = () => {
           <MoveRight />
         </a>
         <a
-          href="/Subash_fullstack.pdf"
+          href="./Subash_fullstack.pdf"
           className="flex gap-2 items-center border px-10 py-2.5 text-foreground  rounded-full font-semibold"
           type="file/pdf"
           download={"Subash_Fullstack.pdf"}
