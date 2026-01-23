@@ -33,7 +33,7 @@ const Header = () => {
       <nav className="bg-white/50 shadow-sm px-12 py-3 rounded-full">
         <ul className="flex items-center gap-4">
           {linkItems.map((e) => (
-            <li key={e.id} className="font-semibold cursor-pointer ">
+            <li key={e.id} className="text-sm font-semibold cursor-pointer ">
               <a href={e.link}>{e.text}</a>
             </li>
           ))}

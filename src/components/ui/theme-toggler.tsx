@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Sun from "../icon/sun";
+import Moon from "../icon/moon";
 
 const ThemeToggler = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -17,7 +18,7 @@ const ThemeToggler = () => {
   };
   return (
     <button onClick={toggleTheme}>
-      {theme === "light" ? "Dark" : <Sun />}
+      {theme === "light" ? <Moon /> : <Sun />}
     </button>
   );
 };
