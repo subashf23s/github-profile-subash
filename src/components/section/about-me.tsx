@@ -1,5 +1,9 @@
+import Aws from "../icon/aws";
 import Code from "../icon/code";
+import Docker from "../icon/docker";
 import Education from "../icon/education";
+import Git from "../icon/git";
+import Linux from "../icon/linux";
 import Project from "../icon/project";
 import { Card, CardContent, CardTitle } from "../ui/card";
 
@@ -54,6 +58,20 @@ const AboutMe = () => {
           </div>
           <div className="py-8">
             <p>Tools I use</p>
+            <ul className="flex items-center gap-4 py-8">
+              <li className="shadow-md p-4 border border-gray-200 rounded-lg cursor-pointer hover:-translate-y-2 duration-500">
+                <Git />
+              </li>
+              <li className="shadow-md p-4 border border-gray-200 rounded-lg cursor-pointer hover:-translate-y-2 duration-500">
+                <Aws />
+              </li>
+              <li className="shadow-md p-4 border border-gray-200 rounded-lg cursor-pointer hover:-translate-y-2 duration-500">
+                <Linux />
+              </li>
+              <li className="shadow-md p-4 border border-gray-200 rounded-lg cursor-pointer hover:-translate-y-2 duration-500">
+                <Docker />
+              </li>
+            </ul>
           </div>
         </div>
       </div>
