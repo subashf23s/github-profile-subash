@@ -30,7 +30,7 @@ const Header = () => {
       <h1>
         subash<span className="text-pink-500">.</span>
       </h1>
-      <nav className="bg-white/50 shadow-sm px-12 py-3 rounded-full">
+      <nav className=" shadow-lg px-12 py-3 rounded-full">
         <ul className="flex items-center gap-4">
           {linkItems.map((e) => (
             <li key={e.id} className="text-sm font-semibold cursor-pointer ">
