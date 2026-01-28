@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ThemeToggler from "./theme-toggler";
+import Logo from "./logo";
 
 const linkItems = [
   { id: 1, link: "#home", text: "Home" },
@@ -27,10 +28,8 @@ const Header = () => {
     <header
       className={`container flex items-center justify-between py-4 fixed top-0 left-0 right-0 z-10 ${scrolled && "shadow-md backdrop-blur-2xl"}`}
     >
-      <h1>
-        subash<span className="text-pink-500">.</span>
-      </h1>
-      <nav className=" shadow-lg px-12 py-3 rounded-full">
+      <Logo />
+      <nav className=" shadow-lg dark:shadow-pink-500 px-12 py-3 rounded-full">
         <ul className="flex items-center gap-4">
           {linkItems.map((e) => (
             <li key={e.id} className="text-sm font-semibold cursor-pointer ">
