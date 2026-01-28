@@ -39,6 +39,6 @@
     @apply text-2xl font-medium  text-foreground;
   }
   a {
-    @apply text-light-gray;
+    /* @apply text-light-gray; */
   }
 }
