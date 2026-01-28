@@ -6,7 +6,9 @@ const Footer = () => {
   return (
     <footer className="container">
       <section className="border-t border-gray-500 flex items-center justify-between py-4">
-        <div>&copy; {new Date().getFullYear()}. All rights reserved.</div>
+        <div className="text-xs font-semibold">
+          &copy; {new Date().getFullYear()}. All rights reserved.
+        </div>
         <ul className="flex items-center gap-8">
           <li>
             <a
