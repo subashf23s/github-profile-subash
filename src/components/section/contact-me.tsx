@@ -15,11 +15,17 @@ const ContactMe = () => {
       </div>
       <div className="grid place-items-center text-center space-y-8">
         <Logo />
-        <a href="mailto:subashsuni55@gmail.com" className="flex gap-4">
+        <a
+          href="mailto:subashsuni55@gmail.com"
+          className="flex gap-4 p-4 shadow-lg dark:shadow-pink-400 w-64 font-semibold text-gray-700 dark:text-gray-300"
+        >
           <Mail />
           subashsuni55@gmail.com
         </a>
-        <a href="tel:+919095213338" className="flex gap-4">
+        <a
+          href="tel:+919095213338"
+          className="flex gap-4 p-4 shadow-lg dark:shadow-pink-400 w-64 font-semibold text-gray-700 dark:text-gray-300"
+        >
           <Phone />
           +91 9095213338
         </a>
