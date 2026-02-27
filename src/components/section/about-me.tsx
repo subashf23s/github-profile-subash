@@ -14,12 +14,12 @@ const AboutMe = () => {
         <p>Introduction</p>
         <h2 className="text-5xl py-4">About me</h2>
       </div>
-      <div className="grid grid-cols-5 gap-8 items-center">
-        <div className="col-span-2">
+      <div className="flex flex-col md:grid md:grid-cols-5 gap-8 items-center">
+        <div className="md:col-span-2 ">
           <div className="relative max-w-max">
             <img
               src="./subashphoto.jpg"
-              className="h-96 rounded-4xl border border-gray-300 object-cover"
+              className="h-64 md:h-96 rounded-4xl border border-gray-300 object-cover"
             />
             <div className="absolute right-0 bottom-0  translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] w-1/2 bg-white rounded-full">
               <img
@@ -36,7 +36,7 @@ const AboutMe = () => {
             had the privilege of collaborating with prestigious organizations,
             contributing to their success and growth.
           </p>
-          <div className="grid grid-cols-3 gap-4 py-8">
+          <div className="grid md:grid-cols-3 gap-4 py-8">
             <Card>
               <Code />
               <CardTitle>Languages</CardTitle>
@@ -58,7 +58,7 @@ const AboutMe = () => {
           </div>
           <div className="py-8">
             <p>Tools I use</p>
-            <ul className="flex items-center gap-4 py-8">
+            <ul className="flex items-center gap-2 md:gap-4 flex-wrap py-8">
               <li className="shadow-md p-4 border border-gray-200 rounded-lg cursor-pointer hover:-translate-y-2 duration-500">
                 <Git />
               </li>
