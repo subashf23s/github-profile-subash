@@ -29,7 +29,7 @@ const Header = () => {
       className={`container flex items-center justify-between py-4 fixed top-0 left-0 right-0 z-10 ${scrolled && "shadow-md backdrop-blur-2xl"}`}
     >
       <Logo />
-      <nav className=" shadow-lg dark:shadow-pink-500 px-12 py-3 rounded-full">
+      <nav className="hidden md:block shadow-lg dark:shadow-pink-500 px-12 py-3 rounded-full">
         <ul className="flex items-center gap-4">
           {linkItems.map((e) => (
             <li key={e.id} className="text-sm font-semibold cursor-pointer ">
